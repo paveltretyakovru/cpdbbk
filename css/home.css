@@ -1,0 +1,381 @@
+/* Block 1 on home page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#home {
+  position: relative;
+  color: white;
+  background: black;
+  width: 100%;
+  padding: 8rem;
+  
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  z-index: 12;
+
+  overflow: hidden;
+}
+
+section h1 {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+figure img {
+  margin-bottom: .5rem;
+}
+
+#home * {
+  position: relative;
+  z-index: 15;
+}
+
+
+#keyboard {
+  display: block;
+  position: absolute;
+  top: 18%;
+  left: 23%;
+  height: 110%;
+  width: 110%;
+  z-index: 10;
+}
+
+#buttonkey {
+  width: 100%;
+}
+
+#buttonkey:hover {
+  width: 120%;
+}
+
+/* Dowload presentation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#aboutus {
+  position: relative;
+  padding: 8rem;
+  z-index: 20;
+  background: white;
+}
+
+#download_pdf {
+  position: relative;
+  overflow: hidden;
+  background: url("../images/download_pdf.jpg");
+  background-position: center center;
+  background-size: 120%;
+  border-radius: 1rem;
+
+  -webkit-transition: all 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000); 
+  -moz-transition: all 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000); 
+  -o-transition: all 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000); 
+  transition: all 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000); 
+}
+
+#coloroverlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  overflow: hidden;
+
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+  text-align: center;
+  background: rgba(0,0,255,0.8);
+
+  -webkit-transition: all 1000ms cubic-bezier(0.190, 1.000, 0.220, 1.000); 
+  -moz-transition: all 1000ms cubic-bezier(0.190, 1.000, 0.220, 1.000); 
+  -o-transition: all 1000ms cubic-bezier(0.190, 1.000, 0.220, 1.000); 
+  transition: all 1000ms cubic-bezier(0.190, 1.000, 0.220, 1.000); 
+}
+
+#coloroverlay:hover {
+  background: rgba(255,0,0,0.8);
+}
+
+#download_pdf:hover {
+    background-size: 100%;
+}
+ 
+/* Our services
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#services {
+  position: relative;
+  padding: 8rem;
+  background: #f5f8fA;
+  z-index: 30;
+}
+
+#services h2 {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+#services img {
+  width: 6rem;
+  height: 6rem;
+  margin-bottom: 1rem;
+}
+#services h4 {
+  margin-bottom: 6rem;
+  color: #84939C;
+}
+
+#services h5 {
+  margin-bottom: 1rem;
+}
+
+#services h6 {
+  color: blue;
+}
+
+#services p {
+  font-weight: 400;
+  margin-bottom: 5rem;
+  color: #84939C;
+}
+
+
+/* Best projects
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#best_projects {
+  position: relative;
+  padding-top: 8rem;
+  text-align: center;
+  background: white;
+  z-index: 40;
+}
+
+#best_projects h2 {
+  margin-bottom: 2rem;
+}
+
+#best_projects h4 {
+  margin-bottom: 8rem;
+  color: #84939C;
+}
+
+/* Слайдер */ 
+#slider article {
+  display: block;
+  position: relative;
+  min-height: 40vh;
+  height: 40vh;
+  color: white;
+  overflow: hidden;
+  outline: none;
+}
+
+.uhpcase {
+  background: url("../images/cases/uhp/uhp_p.png");
+  background-size: cover;
+}
+
+.mimicracase {
+  background: url("../images/cases/mimicra/mimicra_p.jpg");
+  background-size: cover;
+}
+
+.cuplicase {
+  background: url("../images/cases/cupli/cupli_p.jpg");
+  background-size: cover;
+}
+
+.almwacase {
+  background: url("../images/cases/almwajaha/almwa_p.jpg");
+  background-size: cover;
+}
+
+#slider header {
+  position: absolute;;
+  display: block;
+  top: 2rem;
+  left: 2rem;
+  text-align: left;
+  font-weight: 400;
+  display: none;
+}
+
+#slider header small {
+  opacity: 0.5;
+  font-weight: 300;
+}
+
+#slider img {
+  display: block;
+  position: absolute;
+  top: 30%;
+  height: 40%;
+  width: 100%;
+  left: 0;
+}
+
+#slider footer {
+  position: absolute;;
+  display: block;
+  bottom: 2rem;
+  right: 2rem;
+  display: none;
+}
+
+/* Best projects
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#clients {
+  text-align: center;
+  padding: 8rem;
+  background: #f5f8fA;
+}
+
+#clients h2 {
+  margin-bottom: 2rem;
+}
+
+#clients h4 {
+  margin-bottom: 6rem;
+  color: #84939C;
+}
+
+#clients div {
+  text-align: center;
+}
+
+#clients div div {
+  display: inline-block;
+  background: white;
+  padding: 8rem;
+  margin: 1rem;
+}
+
+#clients img {
+  width: 8rem;
+  height: 8rem;
+}
+
+/* Tesinomials
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#testimonials {
+  position: relative;
+  text-align: center;
+  padding: 8rem 20rem;
+  z-index: 65;
+  background: white;
+}
+
+#testimonials img {
+  position: relative;
+  border: .25rem solid rgba(0,0,0,0.1);
+  width: 6rem;
+  height: 6rem;
+  border-radius: 4rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+#testimonials h3 {
+  margin: 4rem;
+}
+
+#testimonials h6 {
+  color: blue;
+  font-weight: 600;
+}
+
+#testimonials small {
+  font-weight: 500;
+  color: #84939C;
+}
+
+
+/* Lets work toherher
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#letsworktogether {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8rem;
+  background: blue;
+}
+
+#letsworktogether h4 {
+  margin-right: 2rem;
+  margin-bottom: 0;
+  display: inline;
+}
+
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#footer {
+  padding: 8rem;
+  background: black;
+  color: white;
+  overflow: hidden;
+}
+
+#footer section p {
+  margin: 2rem 0;
+  opacity: 0.75;
+}
+
+#footer section a {
+  font-weight: 600;
+  color: blue;
+}
+
+#footer nav a {
+  display: block;
+}
+
+#footer h5 {
+  margin-bottom: 1rem;
+}
+
+address p {
+  line-height: 2.5;
+  opacity: 0.5;
+}
+
+#footer div div a {
+  display: block;
+  line-height: 2.5;
+  opacity: 0.5;
+  text-transform: none;
+}
+
+#footer div div a:hover {
+  opacity: 1;
+}
+
+#footer div div a:active {
+  opacity: .75;
+}
+
+.twocolumn {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 1rem;
+    -moz-column-gap: 1rem;
+    column-gap: 1rem;
+    height: 10rem;
+    line-height: 2.5;
+    font-weight: 400;
+    letter-spacing: .3rem;
+}
+
+.footer_adress {
+  line-height: 1.5;
+}
+
+.copyright {
+  opacity: 0.5;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+}

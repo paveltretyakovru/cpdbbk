@@ -1,0 +1,81 @@
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+* { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; }
+
+html, body, main {
+  width: 100%;
+  height: 100%; 
+}
+
+html { font-size: 62.5%;}
+body {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: 300;
+  font-family: "Avenir Next W00";
+  color: #2b353b;
+  background: gray;
+}
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h6, a, button, small, figure { text-transform: uppercase; }
+
+h1 { font-size: 4.0rem; letter-spacing: .5rem;   font-weight: 300; line-height: 1.8}
+h2 { font-size: 3.6rem; letter-spacing: .5rem;   font-weight: 400; }
+h3 { font-size: 3.0rem; letter-spacing: -.05rem; font-weight: 300; line-height: 1.8}
+h4 { font-size: 2.4rem; letter-spacing: -.06rem; font-weight: 300; }
+h5 { font-size: 1.8rem; letter-spacing: -.05rem; font-weight: 400; }
+h6 { font-size: 1.2rem; letter-spacing: .3rem;   font-weight: 600; }
+
+small  { font-weight: 600; letter-spacing: .3rem; }
+figure { font-weight: 500; letter-spacing: .3rem; }
+p      { font-weight: 400; }
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  h1 { font-size: 3.0rem; }
+  h2 { font-size: 2.4rem; }
+  h3 { font-size: 2.4rem; }
+  h4 { font-size: 1.8rem; }
+  h5 { font-size: 1.6rem; }
+  h6 { font-size: 1.2rem; }
+}
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+button {
+  padding: 1rem 2rem 1rem 2rem;
+  color: white;
+  background: blue;
+  letter-spacing: .3rem;
+  font-weight: 400;
+
+  -webkit-transition: .2s all ease-out;
+  -moz-transition: .2s all ease-out;
+  -o-transition: .2s all ease-out;
+  transition: .2s all ease-out; 
+}
+
+button:hover {
+  background: red;
+}
+
+button:active {
+  background: blue;
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+button.stroke {
+  background: none;
+  border: 2px solid white;
+}
+
+button.stroke:hover {
+  background: red;
+  border: 2px solid red;
+}
