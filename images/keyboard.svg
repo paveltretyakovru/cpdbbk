@@ -571,16 +571,8 @@
 		</g>
 	</g>
 </g>
-<g id="Слой_2">
-	<g id="XMLID_170_">
-		<path id="XMLID_192_" opacity="0.5" fill="#0000FF" d="M451.7,208l-24.8,18.8c-1.9,1.4-1.9,4.3-0.1,5.8c5,4,13.9,11.1,19.7,15.7
-			c1.3,1.1,3.2,1.1,4.6,0l24.7-19c1.9-1.5,1.9-4.3,0-5.8c-6.3-5-15.4-12.2-19.5-15.5C454.9,207,453,207,451.7,208z"/>
-		
-			<path id="XMLID_191_" fill="none" stroke="#0000FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-			M451.7,208l-24.8,18.8c-1.9,1.4-1.9,4.3-0.1,5.8c5,4,13.9,11.1,19.7,15.7c1.3,1.1,3.2,1.1,4.6,0l24.7-19c1.9-1.5,1.9-4.3,0-5.8
-			c-6.3-5-15.4-12.2-19.5-15.5C454.9,207,453,207,451.7,208z"/>
-	</g>
-	<g id="XMLID_166_">
+<g id="Слой_2">	
+	<g id="XMLID_166_" class="buttonkey">
 		<path id="XMLID_188_" opacity="0.5" fill="#0000FF" d="M509.6,164.9l-24.4,18.3c-1.9,1.4-1.9,4.2-0.1,5.6
 			c4.9,3.9,13.7,10.8,19.4,15.3c1.3,1,3.2,1,4.5,0l24.3-18.5c1.9-1.4,1.9-4.2,0-5.6c-6.2-4.9-15.2-11.9-19.3-15.1
 			C512.8,163.9,510.9,163.9,509.6,164.9z"/>
@@ -785,7 +777,7 @@
 	
 		<text id="XMLID_11_" transform="matrix(0.673 -0.536 0.7776 0.6288 152.014 379.6016)" fill="#FFFFFF" font-family="'AvenirNextCyr-Medium'" font-size="10px">B</text>
 	
-		<text id="XMLID_9_" transform="matrix(0.673 -0.536 0.7776 0.6288 445.6313 236.6098)" fill="#FFFFFF" font-family="'AvenirNextCyr-Medium'" font-size="10px">K</text>
+		
 	
 		<text id="XMLID_12_" transform="matrix(0.673 -0.536 0.7776 0.6288 272.66 366.5667)" fill="#FFFFFF" font-family="'AvenirNextCyr-Medium'" font-size="10px">D</text>
 	
@@ -805,7 +797,7 @@
 	
 		<text id="XMLID_139_" transform="matrix(0.673 -0.536 0.7776 0.6288 468.0705 297.1053)" fill="#FFFFFF" font-family="'AvenirNextCyr-Medium'" font-size="10px">$</text>
 	
-		<text id="XMLID_254_" transform="matrix(0.673 -0.536 0.7776 0.6288 503.0717 191.1037)" fill="#FFFFFF" font-family="'AvenirNextCyr-Medium'" font-size="10px">$</text>
+		<text class="keyletter"  id="XMLID_254_" transform="matrix(0.673 -0.536 0.7776 0.6288 503.0717 191.1037)" fill="#FFFFFF" font-family="'AvenirNextCyr-Medium'" font-size="10px">$</text>
 	
 		<text id="XMLID_255_" transform="matrix(0.673 -0.536 0.7776 0.6288 523.514 256.2478)" fill="#FFFFFF" font-family="'AvenirNextCyr-Medium'" font-size="10px">$</text>
 	
@@ -820,6 +812,14 @@
 	.buttonkey:active {
 		animation: anim 0.25s infinite linear;
 		
+	}
+
+	.keyletter:hover {
+		fill:red;
+	}
+
+	.keyletter:active {
+		animation: anim 0.25s infinite linear;
 	}
 
 	@keyframes anim {
@@ -847,6 +847,17 @@
 	}
 
 </style>
+
+<g class="buttonkey">
+	<path opacity="0.5" fill="#0000FF" d="M451.7,208l-24.8,18.8c-1.9,1.4-1.9,4.3-0.1,5.8c5,4,13.9,11.1,19.7,15.7
+	c1.3,1.1,3.2,1.1,4.6,0l24.7-19c1.9-1.5,1.9-4.3,0-5.8c-6.3-5-15.4-12.2-19.5-15.5C454.9,207,453,207,451.7,208z"/>
+
+	<path fill="none" stroke="#0000FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M451.7,208l-24.8,18.8c-1.9,1.4-1.9,4.3-0.1,5.8c5,4,13.9,11.1,19.7,15.7c1.3,1.1,3.2,1.1,4.6,0l24.7-19c1.9-1.5,1.9-4.3,0-5.8
+	c-6.3-5-15.4-12.2-19.5-15.5C454.9,207,453,207,451.7,208z"/>
+
+	<text id="XMLID_9_" transform="matrix(0.673 -0.536 0.7776 0.6288 445.6313 236.6098)" fill="#FFFFFF" font-family="'AvenirNextCyr-Medium'" font-size="10px">K</text>
+</g>
 
 <g class="buttonkey">
 <path  opacity="0.5" fill="#0000FF" d="M336.2,294.7L311,313.9c-1.9,1.5-2,4.4-0.1,5.9c5.1,4,14.1,11.3,20,15.9c1.4,1.1,3.3,1.1,4.7,0l25.1-19.3c1.9-1.5,1.9-4.4,0-5.9c-6.4-5.1-15.6-12.4-19.9-15.7C339.5,293.7,337.6,293.6,336.2,294.7z"/>

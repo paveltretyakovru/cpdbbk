@@ -51,6 +51,10 @@ figure img {
   width: 120%;
 }
 
+#slogo {
+  z-index: -1
+}
+
 /* Dowload presentation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #aboutus {
