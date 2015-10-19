@@ -27,6 +27,6 @@ $(document).ready(function(){
       } } ]
   });
   // Smooth Wheel
-  $("body").smoothWheel();
+  //$("body").smoothWheel();
 });
 
