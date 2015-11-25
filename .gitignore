@@ -1,1 +1,6 @@
 ﻿.DS_Store
+public/js
+public/css
+public/*.html
+public/fonts
+node_modules
