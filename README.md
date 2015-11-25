@@ -3,15 +3,15 @@
 ## Установка
 
 ### Склонировать репозиторий
-- $ `git clone git@github.com:ptretyakov/cpdbbk.git`
+  $ `git clone git@github.com:ptretyakov/cpdbbk.git`
 ### Установить NPM пакеты
-- $ `npm install`
+  $ `npm install`
 ### При необходимости установить **Grunt**
-- $ `npm install -g grunt-cli`
+  $ `npm install -g grunt-cli`
 ### Создать && конвертировать && подготовить файлы
-- $ `grunt init`
+  $ `grunt init`
 ### Запустить сервер и просмоторщик
-- $ `grunt serve`
+  $ `grunt serve`
 
 ## Потдержка
 В настоящий момент *index.html* не переведен в *haml*. И поэтому он копируется из
