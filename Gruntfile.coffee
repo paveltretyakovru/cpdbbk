@@ -80,16 +80,16 @@ module.exports = ( grunt ) ->
 		watch :
 			haml :
 				files : [ 'source/haml/**/*.haml' ]
-				tasks : [ 'haml:init' ]
+				tasks : [ 'haml:init' , 'copy:init' ]
 			transpile  :
 				files : [ 'source/cjs/**/*.cjs' ]
 				tasks : [ 'transpile:init' , 'browserify:init' ]
 			sass :
 				files : [ 'source/sass/**/*.scss' , 'source/sass/**/*.sass' ]
-				tasks : [ 'sass:init' ]
+				tasks : [ 'sass:init' , 'copy:init' ]
 			coffee :
 				files : [ 'source/coffee/**/*.coffee' ]
-				tasks : [ 'coffee:init' , 'browserify:init' ]
+				tasks : [ 'coffee:init' , 'copy:init' , 'browserify:init' ]
 			html :
 				files : [ 'source/html/**/*.html' , 'source/css/**/*.css' , 'source/js/**/*.js' ]
 				tasks : [ 'copy:init' , 'browserify:init' ]
@@ -106,5 +106,5 @@ module.exports = ( grunt ) ->
 
 	# Registering tasks
 	# Create new task -> "init", it's started created tasks -> "haml":grunt-haml2html with parameters from atribute "init"(grun.innitConfig({})
-	grunt.registerTask 'init' 	, [ 'haml:init' , 'copy:init' , 'transpile:init' , 'browserify:init' , 'sass:init' , 'coffee:init' ]
+	grunt.registerTask 'init' 	, [ 'haml:init' , 'copy:init' , 'coffee:init' , 'sass:init' , 'transpile:init' , 'browserify:init' ]
 	grunt.registerTask 'serve'	, [ 'connect' , 'watch' ]

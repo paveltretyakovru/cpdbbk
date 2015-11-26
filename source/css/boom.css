@@ -1,0 +1,6 @@
+/* Гланвй клаас :) */
+.boom-svg{
+	z-index	: 10;
+	overflow: hidden;
+	position: absolute
+}

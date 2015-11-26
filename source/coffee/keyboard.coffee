@@ -1,3 +1,5 @@
+Boom = require('./boom.js');
+
 ready = ( fn ) ->
 	if document.readyState != 'loading' then fn() else document.addEventListener 'DOMContentLoaded' , fn
 
@@ -13,3 +15,4 @@ ready ->
 		keys 		= keyboardDoc.querySelectorAll '.key'
 
 		console.log 'Keyboard loaded' , keys[0]
+		Boom keyboardDoc
