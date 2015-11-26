@@ -6,7 +6,7 @@
   background: black;
   width: 100%;
   padding: 8rem;
-  
+
   min-height: 100%;
 
   display: flex;
@@ -31,7 +31,8 @@ figure img {
   position: relative;
   z-index: 15;
 }
-
+#home .container-swg { position  : absolute; z-index   : 9 }
+#home .container-swg * { position : inherit }
 
 #keyboard {
   display: block;
@@ -72,10 +73,10 @@ figure img {
   background-size: 120%;
   border-radius: 1rem;
 
-  -webkit-transition: all 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000); 
-  -moz-transition: all 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000); 
-  -o-transition: all 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000); 
-  transition: all 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000); 
+  -webkit-transition: all 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  -moz-transition: all 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  -o-transition: all 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  transition: all 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
 }
 
 #coloroverlay {
@@ -93,10 +94,10 @@ figure img {
   text-align: center;
   background: rgba(0,0,255,0.8);
 
-  -webkit-transition: all 1000ms cubic-bezier(0.190, 1.000, 0.220, 1.000); 
-  -moz-transition: all 1000ms cubic-bezier(0.190, 1.000, 0.220, 1.000); 
-  -o-transition: all 1000ms cubic-bezier(0.190, 1.000, 0.220, 1.000); 
-  transition: all 1000ms cubic-bezier(0.190, 1.000, 0.220, 1.000); 
+  -webkit-transition: all 1000ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  -moz-transition: all 1000ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  -o-transition: all 1000ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  transition: all 1000ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
 }
 
 #coloroverlay:hover {
@@ -106,7 +107,7 @@ figure img {
 #download_pdf:hover {
     background-size: 100%;
 }
- 
+
 /* Our services
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #services {
@@ -165,7 +166,7 @@ figure img {
   color: #84939C;
 }
 
-/* Слайдер */ 
+/* Слайдер */
 #slider article {
   display: block;
   position: relative;
